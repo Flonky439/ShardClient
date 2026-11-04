@@ -88,13 +88,15 @@ ShardClient doesn't include them. Get them from the
 
 ## Step 6: First run in the headset
 
-Everything starts **off**. You turn things on from the ShardClient console.
+Some features start **off**. You turn things on from the ShardClient console.
 
 1. In a world, raise your wrist to open the quick menu and tap the **ShardClient** bubble.
-2. Turn **Dev tools** on, then **fully restart the game** (the console only exists after this).
-3. Open the ShardClient bubble again and tap **Console** (it reads SHOWN).
-4. On the console, set the lever to **Run On Client**, type with the VR keyboard and submit.
-5. Try `shard help`, then `shard list`.
+2. Tap **Console** (it reads SHOWN). A floating panel with a VR keyboard appears.
+3. On the console, set the lever to **Run On Client**, type with the VR keyboard and submit.
+4. Try `shard help`, then `shard list`.
+
+The bubble's other button, **Dev tools**, switches the console system off and on (it's on to
+start; a change needs a full restart).
 
 ## Using it
 
