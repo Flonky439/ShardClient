@@ -113,7 +113,7 @@ start; a change needs a full restart).
 | `shard markers` | player markers the map board shows |
 | `shard find <name> [metres]` | nearest loaded objects matching a name |
 | `shard vault ...` | a personal library of *local copies* of items (`shard vault help`) |
-| `shard attach` / `shard detach [all]` | attach a held item to what it touches |
+| `shard attach` / `shard detach` | stick a held arrow, knife or spear into what you aim at, or pull it out |
 | `shard update` | install the newest version (then restart) |
 
 ### Features
@@ -126,7 +126,6 @@ start; a change needs a full restart).
 | `ThrowMultiplier` | 3 | how hard letting go of a climb flings you (1 = normal) |
 | `BeltGrab` | on | take items from other players' belt and shoulder slots |
 | `AnyConnect` | on | any crafting port accepts any part with a port (the server may refuse it) |
-| `AutoAttach` | on | press a held item against something for a moment to attach it |
 | `AutoRevive` | on | when downed, your revive orbs are pulled into your right hand: hold it at your face |
 | `Telekinesis` | off | right hand: grip to lock the nearest item along your arm, yank back to pull it in |
 | `MineAnything` | off | mine any ore with anything that deals damage |
