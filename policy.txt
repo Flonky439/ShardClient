@@ -1,0 +1,6 @@
+shardclient-policy v1
+# ShardClient owner locks. Made by scripts/policy.sh: hand edits break the signature.
+serial 1
+lock BeltGrab off
+lock SnatchFromHands off
+signature rUdXwB2jXQxlvJy5tPfnpejR29+ZDPA6fQl98F7jCkBzXmUEyMxSey0fybXCeI+RgbwMtyF3uHEJhIs76yY8rUuG3u/em7fgNaCEiUVqnlpZ+3q00BaLamKs+EzVvs70IA9cd82ifgII72eWZDYf8cTKo7ngAG86p7842VxxltUQFxCQ6it+TjfaPd0OkBRAy3JKE4q7B3bwKlZ0B4MEUORsbeJSuBEBLROI0w/agdWBA57/E3NVIh2+Doa431S9sOAvkZZmHZDwquiHAGWE0O9L5qvIIz4dnUtBdrqQrxEN8zFUwE/+UXX04sEaQHZKUipLPcWikny3YmToKenn9Q==
