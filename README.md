@@ -115,6 +115,8 @@ start; a change needs a full restart).
 | `shard vault ...` | a personal library of *local copies* of items (`shard vault help`) |
 | `shard attach` / `shard detach` | stick a held arrow, knife or spear into what you aim at, or pull it out |
 | `shard update` | install the newest version (then restart) |
+| `shard admin <command>` | run a server command using your own server permissions (admins only; see below) |
+| `shard locks` | settings the mod's owner has locked (see [Owner locks](#owner-locks)) |
 
 ### Features
 
@@ -124,15 +126,36 @@ start; a change needs a full restart).
 | `UnlockEverything` | on | climbing without the unlock |
 | `InfiniteClimbStamina` | on | hand stamina doesn't drain while climbing |
 | `ThrowMultiplier` | 3 | how hard letting go of a climb flings you (1 = normal) |
-| `BeltGrab` | on | take items from other players' belt and shoulder slots |
+| `BeltGrab` | off, locked | take items from other players' belt and shoulder slots |
 | `AnyConnect` | on | any crafting port accepts any part with a port (the server may refuse it) |
 | `AutoRevive` | on | when downed, your revive orbs are pulled into your right hand: hold it at your face |
 | `Telekinesis` | off | right hand: grip to lock the nearest item along your arm, yank back to pull it in |
 | `MineAnything` | off | mine any ore with anything that deals damage |
 | `PerfectSwings` | off | every hit counts as a full-strength swing |
 | `ForceField` | off | nearby projectiles and creatures pass through you, on your screen only |
-| `SnatchFromHands` | off | grab items out of other players' hands |
+| `SnatchFromHands` | off, locked | grab items out of other players' hands |
 | `TabletTeleport` | off | a Teleport button on players in the social tablet |
+
+### Server admin commands
+
+If you're an admin on the server you're playing, `shard admin <command>` runs a server
+command from the Quest console without hunting for the lever — for example
+`shard admin debug server-stats`. It sends the command to the server through the game's
+normal path, and **the server decides whether to run it, using your own permissions**.
+If you're not an admin there, the server refuses, exactly as it would in the console.
+It grants nothing: it's a shortcut, not a key.
+
+### Owner locks
+
+ShardClient's owner can lock any setting on or off, for everyone or for one player, so
+features can be switched off if they cause trouble on servers. A locked setting shows
+`(locked)` in `shard list`, and `shard set` won't change it. `shard locks` lists what's
+locked for you. `BeltGrab` and `SnatchFromHands` start locked off.
+
+How it works: the mod downloads [`policy.txt`](policy.txt) from this repo when the game
+starts and every five minutes after. The file is signed, and the mod refuses one that
+isn't signed by the owner. Nothing about you is sent: it's a plain download, and rules
+for one player are matched on your headset against your own username.
 
 ### What it can't do
 
