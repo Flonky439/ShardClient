@@ -115,7 +115,6 @@ start; a change needs a full restart).
 | `shard vault ...` | a personal library of *local copies* of items (`shard vault help`) |
 | `shard attach` / `shard detach` | stick a held arrow, knife or spear into what you aim at, or pull it out |
 | `shard update` | install the newest version (then restart) |
-| `shard admin <command>` | run a server command using your own server permissions (admins only; see below) |
 | `shard locks` | settings the mod's owner has locked (see [Owner locks](#owner-locks)) |
 
 ### Features
@@ -135,15 +134,6 @@ start; a change needs a full restart).
 | `ForceField` | off | nearby projectiles and creatures pass through you, on your screen only |
 | `SnatchFromHands` | off, locked | grab items out of other players' hands |
 | `TabletTeleport` | off | a Teleport button on players in the social tablet |
-
-### Server admin commands
-
-If you're an admin on the server you're playing, `shard admin <command>` runs a server
-command from the Quest console without hunting for the lever — for example
-`shard admin debug server-stats`. It sends the command to the server through the game's
-normal path, and **the server decides whether to run it, using your own permissions**.
-If you're not an admin there, the server refuses, exactly as it would in the console.
-It grants nothing: it's a shortcut, not a key.
 
 ### Owner locks
 
