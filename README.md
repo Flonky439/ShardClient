@@ -168,6 +168,10 @@ update check` only tells you whether there's a newer version.
 - **Log**: `Android/data/com.Alta.ATownshipTale/files/MelonLoader/com.Alta.ATownshipTale/MelonLoader/Latest.log`.
   Search it for `ShardClient`.
 
+## Server owners
+
+Running a community server and fighting lag (the forest especially)? **[ShardPerformance](https://github.com/Flonky439/ShardPerformance)** is a separate server-side mod that trims forest and item streaming for areas no player is near. It installs on the server only — players need nothing. (Experimental.)
+
 ---
 
 Use at your own risk. ShardClient isn't made by or affiliated with Alta or Modding Tavern.
