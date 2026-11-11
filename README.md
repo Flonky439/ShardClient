@@ -144,7 +144,7 @@ features can be switched off if they cause trouble on servers. A locked setting 
 locked for you. `BeltGrab` and `SnatchFromHands` start locked off.
 
 How it works: the mod downloads [`policy.txt`](policy.txt) from this repo when the game
-starts and every five minutes after. The file is signed, and the mod refuses one that
+starts and every 15 seconds after. The file is signed, and the mod refuses one that
 isn't signed by the owner. Nothing about you is sent: it's a plain download, and rules
 for one player are matched on your headset against your own username.
 
