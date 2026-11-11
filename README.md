@@ -115,6 +115,7 @@ start; a change needs a full restart).
 | `shard vault ...` | a personal library of *local copies* of items (`shard vault help`) |
 | `shard attach` / `shard detach` | stick a held arrow, knife or spear into what you aim at, or pull it out |
 | `shard update` | install the newest version (then restart) |
+| `shard admin <command>` | run a server command, on servers running ShardPerformance where you're an admin |
 | `shard locks` | settings the mod's owner has locked (see [Owner locks](#owner-locks)) |
 
 ### Features
